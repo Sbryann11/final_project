@@ -10,11 +10,25 @@ header{
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
+    height: 60px;
 }
 .logo img{
     width: 50px;
     height: 50px;
     margin-left: 20px;
+}
+.first{
+    background-image: url(/home_pages/photos/first.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.first h1{
+   text-align:center;
+   font-size: 50px;
+   padding: 50px 0;
 }
 .pages ul{
     list-style: none;
@@ -27,4 +41,21 @@ header{
     text-decoration: none;
     color: white;
     font-weight: bold; 
+}
+.pages li a:hover{
+    color: #000000;
+}
+.pages li a:active{
+    color: #000000;
+}
+
+.second{
+    background-color: #ff0000;
+    width: 100%;
+    height: 100vh;
+}
+.second h2{
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0;
 }
