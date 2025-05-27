@@ -38,38 +38,41 @@
     padding: 0;
     box-sizing: border-box;
 }
-        header{
-    background-color: #ff0000;
-    color: white;
-    padding: 10px 0;
+        header {
     display: flex;
     justify-content: space-between;
-    height: 60px;
-}
-.logo img{
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
-}
-.pages ul{
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin-right: 20px;
-    margin-top: 10px;
-}
-.pages li a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold; 
-}
-.pages li a:hover{
-    color: #000000;
-}
-.pages li a:active{
-    color: #000000;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.pages ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.pages ul li {
+    margin-left: 20px;
+}
+
+.pages ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.pages ul li a:hover {
+    color: #ff6347;
+}
          body {
             font-family: Arial, sans-serif;
             margin: 0;

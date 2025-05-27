@@ -4,13 +4,40 @@
     box-sizing: border-box;
 }
 
-header{
-    background-color: #ff0000;
-    color: white;
-    padding: 10px 0;
+header {
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.pages ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.pages ul li {
+    margin-left: 20px;
+}
+
+.pages ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.pages ul li a:hover {
+    color: #ff6347;
 }
 .logo img{
     width: 50px;
@@ -30,32 +57,53 @@ header{
    font-size: 50px;
    padding: 50px 0;
 }
-.pages ul{
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin-right: 20px;
-    margin-top: 10px;
-}
-.pages li a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold; 
-}
-.pages li a:hover{
-    color: #000000;
-}
-.pages li a:active{
-    color: #000000;
+
+.second {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.second{
-    background-color: #ff0000;
-    width: 100%;
-    height: 100vh;
-}
-.second h2{
+.second h2 {
     text-align: center;
-    font-size: 50px;
-    padding: 50px 0;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.city {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.city > div {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 45%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.city > div:hover {
+    transform: scale(1.05);
+}
+
+.city img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.city h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.city p {
+    font-size: 16px;
+    color: #555;
 }
