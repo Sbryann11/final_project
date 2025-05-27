@@ -1,0 +1,111 @@
+ *{}
+ /*body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .menu-item {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .menu-item h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .menu-item p {
+            margin: 5px 0;
+            color: #555;
+        }*/
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        header{
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+.pages ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.pages li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold; 
+}
+.pages li a:hover{
+    color: #000000;
+}
+.pages li a:active{
+    color: #000000;
+}
+
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .menu-item, .new-year-item {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        .menu-item img, .new-year-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .menu-item h2, .new-year-item h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .menu-item p, .new-year-item p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .new-year-item video {
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
