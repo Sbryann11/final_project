@@ -7,6 +7,48 @@
     <link rel="stylesheet" href="/site/home_pages/style.css">
 </head>
 <body>
+    <script>
+const images = [
+    "/site/home_pages/photos/group1.jpg",
+    "/site/home_pages/photos/group2.jpg",
+    "/site/home_pages/photos/group3.jpg",
+    "/site/home_pages/photos/group4.jpg",
+    "/site/home_pages/photos/group5.jpg",
+    "/site/home_pages/photos/group6.jpg",
+    "/site/home_pages/photos/group7.jpg",
+    "/site/home_pages/photos/group8.jpg",
+    "/site/home_pages/photos/group9.jpg",
+    "/site/home_pages/photos/group10.jpg",
+    "/site/home_pages/photos/group11.jpg",
+    "/site/home_pages/photos/group12.jpg",
+    "/site/home_pages/photos/group13.jpg",
+    "/site/home_pages/photos/group14.jpg",
+    "/site/home_pages/photos/group15.jpg",
+    "/site/home_pages/photos/group16.jpg",
+    "/site/home_pages/photos/group17.jpg",
+    "/site/home_pages/photos/group18.jpg",
+    "/site/home_pages/photos/group19.jpg",
+    "/site/home_pages/photos/group20.jpg",
+    "/site/home_pages/photos/group21.jpg",
+    "/site/home_pages/photos/group22.jpg",
+    "/site/home_pages/photos/group23.jpg",
+    "/site/home_pages/photos/group24.jpg",
+    "/site/home_pages/photos/group25.jpg",
+    // Ajoute ici autant de photos que tu veux
+];
+let current = 0;
+function changeBg() {
+    const firstDiv = document.querySelector('.first');
+    if (firstDiv) {
+        firstDiv.style.backgroundImage = `url('${images[current]}')`;
+        current = (current + 1) % images.length;
+    }
+}
+setInterval(changeBg, 3500);
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.first').style.backgroundImage = `url('${images[0]}')`;
+});
+</script>
     <header>
         <div class="logo">
             <img src="/site/home_pages/photos/logo.jpg" alt="">
@@ -21,7 +63,9 @@
         </div>
     </header>
     <div class="first">
+      <div class="first-content">
         <h1>The Interesting Experience in China</h1>
+      </div>
     </div>
     <div class="second">
         <h2>My Travel Eperience</h2>
