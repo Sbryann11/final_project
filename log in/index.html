@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion</title>
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="./css/connexion.css" />
+    <script defer src="./js/connexion.js"></script>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form id="form" action="#">
+          <h1>Créer un compte</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span> ou utilisez votre email pour la connexion </span>
+          <div class="infield">
+            <i class="fa-regular fa-circle-check"></i>
+            <i class="fa-solid fa-exclamation"></i>
+            <input id="username" type="text" placeholder="Nom" />
+            <label></label>
+            <small> Message d'erreur</small>
+          </div>
+          <div class="infield">
+            <i class="fa-regular fa-circle-check"></i>
+            <i class="fa-solid fa-exclamation"></i>
+            <input id="email" type="email" placeholder="Email" name="email" />
+            <label></label>
+            <small> Message d'erreur</small>
+          </div>
+          <div class="infield">
+            <i class="fa-regular fa-circle-check"></i>
+            <i class="fa-solid fa-exclamation"></i>
+            <input id="password" type="password" placeholder="Mot de passe" />
+            <label></label>
+            <small> Message d'erreur</small>
+          </div>
+          <div class="infield">
+            <i class="fa-regular fa-circle-check"></i>
+            <i class="fa-solid fa-exclamation"></i>
+            <input
+              id="password2"
+              type="password"
+              placeholder="Confirmer le mot de passe"
+            />
+            <label></label>
+            <small> Message d'erreur</small>
+          </div>
+
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+      <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+      <div class="form-container sign-in-container">
+        <form id="submitBtn" action="#">
+          <h1>Connexion</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>ou utilisez votre compte</span>
+          <div class="infield">
+            <i class="fa-regular fa-circle-check"></i>
+            <i class="fa-solid fa-exclamation"></i>
+            <input
+              id="connectMail"
+              type="email"
+              placeholder="Email"
+              name="email"
+            />
+            <label></label>
+            <small> Message d'erreur</small>
+          </div>
+          <div class="infield">
+            <i class="fa-regular fa-circle-check"></i>
+            <i class="fa-solid fa-exclamation"></i>
+            <input
+              id="connectPassword"
+              type="password"
+              placeholder="Password"
+              name="password"
+            />
+            <label></label>
+            <small> Message d'erreur</small>
+          </div>
+          <a href="#" class="forgot">mot de passe oublié?</a>
+          <!--<button> Sign In</button>-->
+          <button type="submit" class="goTo">Connexion</button>
+        </form>
+      </div>
+      <div class="overlay-container" id="overlayCon">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Bon Retour!</h1>
+            <p>
+              Pour rester connecter avec nous veuillez vous connectez avec vos
+              information personnelle
+            </p>
+            <button>Connexion</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Bienvenue !</h1>
+            <p>
+              Entrer vos informations personnelles et commencez votre journée
+              avec nous !!!
+            </p>
+            <button>S'inscrire</button>
+          </div>
+        </div>
+        <button id="overlayBtn"></button>
+      </div>
+    </div>
+  </body>
+</html>
