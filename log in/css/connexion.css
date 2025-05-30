@@ -330,33 +330,28 @@ p {
   .form-container,
   .overlay-container {
     position: static;
-    width: 100vw;
-    min-width: 0;
+    width: 100%;
     height: auto;
     min-height: 350px;
-    padding: 0 4vw;
+    padding: 0 5vw;
     box-sizing: border-box;
   }
   .overlay {
     left: 0;
-    width: 100vw;
+    width: 100%;
     min-width: 0;
   }
   .overlay-panel {
-    width: 100vw;
+    width: 100%;
     min-width: 0;
-    padding: 0 4vw;
+    padding: 0 10px;
   }
   form {
-    padding: 0 4vw;
+    padding: 0 10px;
   }
   .infield i {
     left: auto;
     right: 10px;
-  }
-  .social-container {
-    gap: 10px;
-    justify-content: center;
   }
 }
 
@@ -370,23 +365,18 @@ p {
   }
   .form-container,
   .overlay-container {
-    padding: 0 1vw;
+    padding: 0 2vw;
   }
   form {
-    padding: 0 1vw;
+    padding: 0 2vw;
   }
   .overlay-panel {
-    padding: 0 1vw;
+    padding: 0 2vw;
   }
   h1 {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   p, span, a, label, input, button {
-    font-size: 0.98rem;
-  }
-  .social-container a {
-    height: 32px;
-    width: 32px;
     font-size: 1rem;
   }
 }
