@@ -187,3 +187,53 @@ body {
         text-align: center;
     }
 }
+/* Responsive layout for all pages */
+@media (max-width: 1100px) {
+  .container, .main-content, .footer-content, .travel-cards, .destination-section, .practical-info-section {
+    max-width: 98vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+}
+
+@media (max-width: 900px) {
+  header, .pages, .footer-content, .travel-cards, .destination-section, .practical-info, .testimonials {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 18px !important;
+  }
+  .logo img {
+    width: 90px;
+    height: auto;
+  }
+  .travel-card, .testimonial-card, .practical-info > div {
+    width: 98vw !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  .destination-gallery img, .destination-gallery video, .travel-media-gallery img, .travel-media-gallery video {
+    width: 90vw !important;
+    max-width: 320px;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  body, html {
+    font-size: 15px;
+  }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+  .first-content, .footer-content, .main-content, .travel-card, .testimonial-card, .practical-info-section {
+    padding: 10px !important;
+  }
+  .pages ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
